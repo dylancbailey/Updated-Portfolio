@@ -11,6 +11,13 @@ body {
 
 .navbar li a:hover {
   background: white;
+  color: black;
+  transition: 0.5s ease;
+}
+
+.navbar-brand:hover {
+  color: black;
+  transition: 0.5s ease;
 }
 
 .navbar li {
@@ -38,7 +45,7 @@ body {
   background: rgb(30, 30, 32);
 }
 
-.main img {
+.main img, .projects-music img {
   margin-bottom: 20px;
 }
 
@@ -47,6 +54,7 @@ body {
   -webkit-filter: blur(6px);
 }
 
+/* to put text ontop an image */
 h2 {
   position: absolute;
   top: 10px;
@@ -92,4 +100,21 @@ h2 {
 .jquery-span {
   color: #ED4747;
   font-weight: bold;
+}
+
+.to-middle {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+hr {
+  border-bottom: 1px solid black;
+}
+
+/* Medua Queries */
+@media screen and (min-width: 768px) {
+  .jumbotron h1 {
+    margin-top: 135px;
+  }
 }
