@@ -1,0 +1,36 @@
+body {
+  background: #F1F1F1;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.navbar {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.navbar li a:hover {
+  background: white;
+}
+
+.navbar li {
+  text-align: center;
+}
+
+.navbar a {
+  color: black;
+}
+
+.icon-bar {
+  background: black;
+}
+
+.jumbotron {
+  background: url(../images/jumbotron.jpg) no-repeat center center;
+  background-size: cover;
+  height: 600px;
+}
+
+.jumbotron h1 {
+  color: white;
+  text-shadow: 1px 2px #000;
+  margin-top: 200px;
+}
