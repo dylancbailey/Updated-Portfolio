@@ -44,7 +44,7 @@ body {
 
 /* Testing stuff */
 .overlay {
-  -webkit-filter: grayscale(100%);
+  -webkit-filter: blur(6px);
 }
 
 h2 {
@@ -54,4 +54,42 @@ h2 {
   width: 100%;
   visibility: hidden;
   color: white;
+}
+
+.projects-main p {
+  background: white;
+  color: rgb(30, 30, 32);
+}
+
+.page-divider {
+  background-color: #2A2C2B;
+  height: 300px;
+  margin-bottom: 20px;
+}
+
+.page-divider h1 {
+  color: white;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.section-header {
+  border-left: 2px solid black;
+  padding-left: 10px;
+}
+
+.css-span {
+  color: #34AADC;
+  font-weight: bold;
+}
+
+.html-span {
+  color: #F0652A;
+  font-weight: bold;
+}
+
+.jquery-span {
+  color: #ED4747;
+  font-weight: bold;
 }
