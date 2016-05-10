@@ -149,3 +149,9 @@ form {
   background: transparent;
   border: none;
 }
+
+@media screen and (max-width: 767px) {
+  #search {
+    width: 100%;
+  }
+}
