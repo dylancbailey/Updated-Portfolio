@@ -1,3 +1,29 @@
+/* NAVBAR */
+
+.navbar {
+  background: rgba(241, 241, 241, 0.6);
+}
+
+.navbar li a:hover {
+  background: white;
+  color: black;
+  transition: 0.5s ease;
+}
+
+.navbar-brand:hover {
+  color: black;
+  transition: 0.5s ease;
+}
+
+.navbar li {
+  text-align: center;
+}
+
+.navbar a {
+  color: rgb(30, 30, 32);
+  font-family: 'Montserrat', sans-serif;
+}
+
 html, body {
   margin: 0;
   padding: 0;
@@ -22,7 +48,7 @@ html, body {
 
 .header ul li {
   display: inline-block;
-  margin-top: 40px; 
+  margin-top: 40px;
   margin-left: 20px;
 }
 
