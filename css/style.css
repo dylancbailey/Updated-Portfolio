@@ -158,3 +158,9 @@ hr {
     background: rgba(255, 255, 255, 0.9);
   }
 }
+
+@media screen and (max-width: 991px) {
+  .silhouettes {
+    width: 565px;
+  }
+}
