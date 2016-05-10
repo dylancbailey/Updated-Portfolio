@@ -164,12 +164,17 @@ hr {
 .projects-span {
   background: rgb(30, 30, 32);
   padding: 5px 5px;
-  transition: .5s ease;
 }
 
 .projects-span a {
   color: rgba(241, 241, 241, 1);
   text-decoration: none;
+  transition: .5s ease;
+}
+
+.main-text a:hover {
+  color: white;
+  letter-spacing: 5px;
 }
 
 /* Medua Queries */
