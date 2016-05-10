@@ -48,6 +48,12 @@ body {
   margin-bottom: 20px;
 }
 
+.main-text {
+  border-bottom: 1px solid black;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
 /* Testing stuff */
 .overlay {
   -webkit-filter: blur(6px);
@@ -130,10 +136,18 @@ hr {
   height: 50vh;
 }
 
+.about-main h3 {
+  padding-top: 120px;
+}
+
 .about-main-secondary {
   height: 50vh;
   background: rgb(30, 30, 32);
   color: white;
+}
+
+.about-main-secondary h3 {
+  padding-top: 160px;
 }
 
 .projects-main img {
@@ -144,6 +158,17 @@ hr {
 .main img {
   width: 360px;
   height: 243px;
+}
+
+.projects-span {
+  background: rgb(30, 30, 32);
+  padding: 5px 5px;
+  transition: .5s ease;
+}
+
+.projects-span a {
+  color: rgba(241, 241, 241, 1);
+  text-decoration: none;
 }
 
 /* Medua Queries */
