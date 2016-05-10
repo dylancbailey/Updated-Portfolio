@@ -1,3 +1,30 @@
+/* NAVBAR */
+
+.navbar {
+  background: rgba(241, 241, 241, 0.6);
+}
+
+.navbar li a:hover {
+  background: white;
+  color: black;
+  transition: 0.5s ease;
+}
+
+.navbar-brand:hover {
+  color: black;
+  transition: 0.5s ease;
+}
+
+.navbar li {
+  text-align: center;
+}
+
+.navbar a {
+  color: rgb(30, 30, 32);
+  font-family: 'Montserrat', sans-serif;
+}
+
+
 html, body {
   margin: 0;
 }
@@ -8,10 +35,6 @@ h1, h2, a {
 
 p {
   font-family: Helvetica, Arial, sans-serif;
-}
-
-.navbar a {
-  font-family: 'Montserrat', sans-serif;
 }
 
 /* Main */
@@ -47,7 +70,7 @@ p {
 .btn:hover {
   background-color: white;
   color: black;
-  transition: 0.5s ease;
+  transition: .5s ease;
 }
 
 
