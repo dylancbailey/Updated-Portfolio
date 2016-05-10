@@ -33,15 +33,15 @@ body {
 }
 
 .jumbotron {
-  background: url(../images/jumbotron-min.jpg) no-repeat center center;
+  background: url(../images/jumbotron2-min.jpg) no-repeat center center fixed;
   background-size: cover;
-  height: 600px;
+  height: 100vh;
 }
 
 .jumbotron h1 {
   color: white;
   text-shadow: 1px 2px #000;
-  margin-top: 200px;
+  margin-top: 400px;
   background: rgb(30, 30, 32);
 }
 
@@ -112,9 +112,44 @@ hr {
   border-bottom: 1px solid black;
 }
 
+.email {
+  letter-spacing: 5px;
+}
+
+.contact-main {
+  height: 100vh;
+}
+
+.contact-main h3, .contact-main p {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+.about-main {
+  height: 50vh;
+}
+
+.about-main-secondary {
+  height: 50vh;
+  background: rgb(30, 30, 32);
+  color: white;
+}
+
+.projects-main img {
+  height: 400px;
+  width: 555px;
+}
+
+.main img {
+  width: 360px;
+  height: 243px;
+}
+
 /* Medua Queries */
 @media screen and (min-width: 768px) {
   .jumbotron h1 {
-    margin-top: 135px;
+    margin-top: 300px;
   }
 }
