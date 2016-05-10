@@ -17,6 +17,10 @@
   text-align: center;
 }
 
+.icon-bar {
+  background: rgb(30, 30, 32);
+}
+
 .navbar a {
   color: rgb(30, 30, 32);
   font-family: 'Montserrat', sans-serif;
