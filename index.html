@@ -34,7 +34,7 @@
           </div>
       </nav>
 
-      <header class="vertical-align text-center">
+      <header class="vertical-align text-center top">
         <div class="container">
           <div class="col-md-12">
             <h1 class="title">Dylan Bailey</h1>
@@ -58,6 +58,13 @@
 
     <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script>
+
+    $(window).scroll(function(){
+      $(".top").css("opacity", 1 - $(window).scrollTop() / 600);
+    });
+
+    </script>
 
   </body>
 </html>
