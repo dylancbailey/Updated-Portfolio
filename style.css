@@ -1,0 +1,52 @@
+.jumbotron {
+  height: 100vh;
+  background: linear-gradient(to bottom, #3498db 0, #1abc9c 100%);
+  padding: 0 0;
+  margin: 0 0;
+}
+
+.main {
+  height: 100vh;
+}
+
+.navbar a {
+  color: white;
+}
+
+.navbar li a:hover {
+  background: none;
+  color: grey;
+}
+
+.navbar .icon-bar {
+  background-color: white;
+}
+
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+    outline: none;
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
+}
+
+/***** MAIN *****/
+
+.main {
+  height: 100vh;
+  background-color: #ecf0f1;
+}
+
+/***** ABOUT *****/
+.about {
+  height: 100vh;
+  background-color: #9b59b6;
+}
+
+/***** CONTACT *****/
+.contact {
+  height: 100vh;
+  background-color: #34495e;
+}
