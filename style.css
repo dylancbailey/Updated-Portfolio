@@ -1,21 +1,22 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
 .jumbotron {
   height: 100vh;
   background: linear-gradient(to bottom, #3498db 0, #1abc9c 100%);
-  padding: 0 0;
-  margin: 0 0;
-}
-
-.main {
-  height: 100vh;
+  margin-bottom: 0;
 }
 
 .navbar a {
   color: white;
+  text-transform: uppercase;
+  font-size: 20px;
 }
 
 .navbar li a:hover {
   background: none;
-  color: grey;
+  color: #eee;
 }
 
 .navbar .icon-bar {
@@ -26,10 +27,38 @@
     display: inline-block;
     float: none;
     outline: none;
+    margin-top: 20px;
 }
 
 .navbar .navbar-collapse {
     text-align: center;
+}
+
+/***** HEADER *****/
+header .title {
+  text-align: center;
+  font-size: 120px;
+  color: white;
+}
+
+header .subtext {
+  font-size: 50px;
+  text-align: center;
+  color: white;
+}
+
+.header-btn {
+  color: white;
+  border: 1px solid white;
+  padding: 15px 40px;
+  font-size: 30px;
+  transition: .5s ease;
+}
+
+.header-btn:hover {
+  text-decoration: none;
+  background-color: white;
+  color: #3498db;
 }
 
 /***** MAIN *****/
@@ -49,4 +78,20 @@
 .contact {
   height: 100vh;
   background-color: #34495e;
+}
+
+/***** HELPER *****/
+.vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+/***** MEDIA QUERIES *****/
+@media screen and (max-width: 767px) {
+  .jumbotron {
+    background: red;
+  }
 }
