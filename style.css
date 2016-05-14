@@ -45,13 +45,14 @@ header .subtext {
   font-size: 50px;
   text-align: center;
   color: white;
+  margin-bottom: 50px;
 }
 
 .header-btn {
   color: white;
   border: 1px solid white;
-  padding: 15px 40px;
-  font-size: 30px;
+  padding: 20px 60px;
+  font-size: 25px;
   transition: .5s ease;
 }
 
@@ -60,6 +61,7 @@ header .subtext {
   background-color: white;
   color: #3498db;
 }
+
 
 /***** MAIN *****/
 
@@ -91,7 +93,7 @@ header .subtext {
 
 /***** MEDIA QUERIES *****/
 @media screen and (max-width: 767px) {
-  .jumbotron {
-    background: red;
+  .navbar {
+    background: rgba(0,0,0, 0.5);
   }
 }
