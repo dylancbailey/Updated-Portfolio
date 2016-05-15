@@ -45,29 +45,35 @@
     </div>
 
     <div class="main">
-      <div class="container">
+      <div class="container-fluid">
 
         <div class="row">
           <div class="col-md-4">
-            <a href="#"><img src="img/bolt.jpg" class="img-responsive grow" alt="" /></a>
+            <img src="img/bolt.jpg" class="img-responsive grow" alt="" />
+            <div class="boltToggle"></div>
           </div>
           <div class="col-md-4">
-            <a href="#"><img src="img/move.jpg" class="img-responsive grow" alt="" /></a>
+            <img src="img/move.jpg" class="img-responsive grow" alt="" />
+            <div class="moveToggle"></div>
           </div>
           <div class="col-md-4">
-            <a href="#"><img src="img/bass.jpg" class="img-responsive grow" alt="" /></a>
+            <img src="img/bass.jpg" class="img-responsive grow" alt="" />
+            <div class="bassToggle"></div>
           </div>
         </div>
 
         <div class="row">
           <div class="col-md-4">
-            <a href="#"><img src="img/nana.jpg" class="img-responsive grow" alt="" /></a>
+            <img src="img/nana.jpg" class="img-responsive grow" alt="" />
+            <div class="nanaToggle"></div>
           </div>
           <div class="col-md-4">
-            <a href="#"><img src="img/pocket.jpg" class="img-responsive grow" alt="" /></a>
+            <img src="img/pocket.jpg" class="img-responsive grow" alt="" />
+            <div class="pocketToggle"></div>
           </div>
           <div class="col-md-4">
-            <a href="#"><img src="img/task.jpg" class="img-responsive grow" alt="" /></a>
+            <img src="img/task.jpg" class="img-responsive grow" alt="" />
+            <div class="taskToggle"></div>
           </div>
         </div>
 
@@ -77,12 +83,17 @@
     </div>
 
     <div class="about">
-      <div class="container vertical-align">
+      <div class="container vertical-align text-center">
         <div class="col-md-12">
           <img class="me center-block" src="img/me.jpg" alt="" />
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </p>
+          <img src="img/Twitter.svg" alt="" width="50" height="50"/>
+          <img src="img/YT.svg" alt="" width="50" height="50"/>
+          <img src="img/Instagram.svg" alt="" width="50" height="50"/>
+          <img src="img/Google.svg" alt="" width="50" height="50"/>
+          <img src="img/Git.svg" alt="" width="65" height="65"/>
         </div>
       </div>
     </div>
@@ -90,7 +101,7 @@
     <div class="contact">
       <div class="container ">
 
-        
+
 
       </div>
     </div>
@@ -99,11 +110,17 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script>
 
-    $(window).scroll(function(){
-      $(".top").css("opacity", 1 - $(window).scrollTop() / 600);
-    });
+    $(document).ready(function() {
 
-    $(this).isDumb();
+      $(window).scroll(function(){
+        $(".top").css("opacity", 1 - $(window).scrollTop() / 600);
+      });
+
+      $('.main img').click(function() {
+        $('.boltToggle').slideToggle().toggleClass('active');
+      });
+
+    });
 
     </script>
 
