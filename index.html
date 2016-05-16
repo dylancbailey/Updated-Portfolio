@@ -45,12 +45,15 @@
     </div>
 
     <div class="main">
-      <div class="container-fluid">
+      <div class="container">
 
         <div class="row">
           <div class="col-md-4">
             <img src="img/bolt.jpg" class="img-responsive grow" alt="" />
-            <div class="boltToggle"></div>
+            <div class="boltToggle">
+              <h1 class="text-right">Bolt</h1>
+              <p class="text-right">HTML5, CSS3</p>
+            </div>
           </div>
           <div class="col-md-4">
             <img src="img/move.jpg" class="img-responsive grow" alt="" />
@@ -87,13 +90,12 @@
         <div class="col-md-12">
           <img class="me center-block" src="img/me.jpg" alt="" />
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
           </p>
-          <img src="img/Twitter.svg" alt="" width="50" height="50"/>
-          <img src="img/YT.svg" alt="" width="50" height="50"/>
-          <img src="img/Instagram.svg" alt="" width="50" height="50"/>
-          <img src="img/Google.svg" alt="" width="50" height="50"/>
-          <img src="img/Git.svg" alt="" width="65" height="65"/>
+          <img class="social" src="img/Twitter.svg" alt="" width="50" height="50"/>
+          <img class="social" src="img/YT.svg" alt="" width="50" height="50"/>
+          <img class="social" src="img/Instagram.svg" alt="" width="50" height="50"/>
+          <img class="social" src="img/Google.svg" alt="" width="50" height="50"/>
         </div>
       </div>
     </div>
@@ -117,7 +119,7 @@
       });
 
       $('.main img').click(function() {
-        $('.boltToggle').slideToggle().toggleClass('active');
+        $('.boltToggle').slideToggle(300).toggleClass('active');
       });
 
     });

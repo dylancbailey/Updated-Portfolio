@@ -81,19 +81,20 @@ header .subtext {
     background-color: #9b59b6;
 }
 .me {
-    width: 20%;
-    height: 20%;
+    width: 200px;
+    height: 200px;
     border-radius: 100%;
-    margin-bottom: 40px;
 }
 .about p {
     text-align: center;
     color: white;
-    font-size: 20px;
+    font-size: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
-.about img {
-
+.about .social {
+  margin: 0 20px;
 }
 
 /***** CONTACT *****/
@@ -125,6 +126,7 @@ header .subtext {
 }
 .grow:hover {
     z-index: 2;
+    cursor: pointer;
     -webkit-transition: all 200ms ease-in;
     -moz-transition: all 200ms ease-in;
     -ms-transition: all 200ms ease-in;
@@ -141,6 +143,7 @@ header .subtext {
   width: 100%;
   background: #2980b9;
   display: none;
+  margin-bottom: 20px;
 }
 
 .moveToggle {
