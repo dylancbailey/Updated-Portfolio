@@ -6,14 +6,18 @@ body {
     margin-bottom: 0;
     background: linear-gradient(to bottom, #3498db 0, #1abc9c 100%);
 }
-.navbar a {
+.navbar li a {
     text-transform: uppercase;
     color: white;
     font-size: 15px;
+    background: rgba(0,0,0,0);
 }
 .navbar li a:hover {
     color: #eee;
-    background: none;
+    background: rgba(0,0,0,0);
+}
+.navbar li a:focus {
+  background: rgba(0, 0, 0, 0);
 }
 .navbar .icon-bar {
     background-color: white;
@@ -161,6 +165,20 @@ header .subtext {
 
 @media screen and (max-width: 767px) {
     .navbar {
-        background: rgba(0, 0, 0, 0.5);
+        background: rgba(0, 0, 0, 0.4);
+    }
+    .navbar-nav {
+      text-align: left;
+      margin-right: 80%;
+    }
+    .navbar-toggle {
+      margin-right: 90%;
+    }
+
+    header .title {
+      font-size: 100px;
+    }
+    header .subtext {
+      font-size: 40px;
     }
 }
