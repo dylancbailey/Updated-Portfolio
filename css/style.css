@@ -4,20 +4,21 @@ body {
 .jumbotron {
     height: 100vh;
     margin-bottom: 0;
+    background: -webkit-linear-gradient(top, #3498db 0, #1abc9c 100%);
     background: linear-gradient(to bottom, #3498db 0, #1abc9c 100%);
 }
 .navbar li a {
     text-transform: uppercase;
     color: white;
+    background: rgba(0, 0, 0, 0);
     font-size: 15px;
-    background: rgba(0,0,0,0);
 }
 .navbar li a:hover {
     color: #eee;
-    background: rgba(0,0,0,0);
+    background: rgba(0, 0, 0, 0);
 }
 .navbar li a:focus {
-  background: rgba(0, 0, 0, 0);
+    background: rgba(0, 0, 0, 0);
 }
 .navbar .icon-bar {
     background-color: white;
@@ -47,27 +48,27 @@ header .subtext {
     color: white;
     font-size: 50px;
 }
-
-
 .header-btn {
     padding: 20px 60px;
+    -webkit-transition: all .5s ease;
     transition: all .5s ease;
+    text-decoration: none;
     opacity: 1;
     color: white;
     border: 3px solid white;
     border-radius: 5px;
     font-size: 25px;
-    text-decoration: none;
 }
 .header-btn:hover {
+    -webkit-transition: all .35s ease;
     transition: all .35s ease;
     text-decoration: none;
     color: #3498db;
     background-color: white;
 }
 .header-btn:focus {
-  text-decoration: none;
-  color: white;
+    text-decoration: none;
+    color: white;
 }
 
 /***** MAIN *****/
@@ -78,10 +79,10 @@ header .subtext {
     padding-bottom: 50px;
     background-color: #bdc3c7;
 }
-
 .main img {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
 }
+
 /***** ABOUT *****/
 
 .about {
@@ -94,37 +95,32 @@ header .subtext {
     border-radius: 100%;
 }
 .about p {
+    margin-top: 40px;
+    margin-bottom: 40px;
     text-align: center;
     color: white;
     font-size: 25px;
-    margin-top: 40px;
-    margin-bottom: 40px;
 }
-
 .about .social {
-  margin: 0 20px;
-  transition: all .5s ease;
+    margin: 0 20px;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
 }
-
-.about img path {
-  stroke: red;
-  stroke-width: .5;
-}
-
 .about img:hover {
-  transition: all .35s ease;
+    -webkit-transition: all .35s ease;
+    transition: all .35s ease;
 }
 
 /***** MUSIC *****/
-.music {
-  background: #2980b9;
-  height: 100%;
-  padding-top: 70px;
-  padding-bottom: 50px;
-}
 
+.music {
+    height: 100%;
+    padding-top: 70px;
+    padding-bottom: 50px;
+    background: #2980b9;
+}
 .music img {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 /***** CONTACT *****/
@@ -133,16 +129,14 @@ header .subtext {
     height: 100vh;
     background-color: #34495e;
 }
-
 .contact h1 {
-  color: #233240;
-  font-size: 75px;
+    color: #233240;
+    font-size: 75px;
 }
-
 .contact p {
-  color: white;
-  letter-spacing: 2px;
-  font-size: 30px;
+    letter-spacing: 2px;
+    color: white;
+    font-size: 30px;
 }
 
 /***** HELPER *****/
@@ -151,17 +145,12 @@ header .subtext {
     position: relative;
     top: 50%;
     -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
     transform: translateY(-50%);
 }
 .grow {
     -webkit-transition: all 200ms ease-in;
-    -moz-transition: all 200ms ease-in;
-    -ms-transition: all 200ms ease-in;
     transition: all 200ms ease-in;
     -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
     transform: scale(1);
     border: 0;
 }
@@ -169,23 +158,15 @@ header .subtext {
     z-index: 2;
     cursor: pointer;
     -webkit-transition: all 200ms ease-in;
-    -moz-transition: all 200ms ease-in;
-    -ms-transition: all 200ms ease-in;
     transition: all 200ms ease-in;
     -webkit-transform: scale(1.05);
-    -moz-transform: scale(1.05);
-    -ms-transform: scale(1.05);
     transform: scale(1.05);
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
 }
 .social-grow {
     -webkit-transition: all 200ms ease-in;
-    -moz-transition: all 200ms ease-in;
-    -ms-transition: all 200ms ease-in;
     transition: all 200ms ease-in;
     -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
     transform: scale(1);
     border: 0;
 }
@@ -193,32 +174,9 @@ header .subtext {
     z-index: 2;
     cursor: pointer;
     -webkit-transition: all 200ms ease-in;
-    -moz-transition: all 200ms ease-in;
-    -ms-transition: all 200ms ease-in;
     transition: all 200ms ease-in;
     -webkit-transform: scale(1.05);
-    -moz-transform: scale(1.05);
-    -ms-transform: scale(1.05);
     transform: scale(1.4);
-}
-
-.boltToggle {
-  height: 500px;
-  width: 100%;
-  background: #2980b9;
-  display: none;
-  margin-bottom: 20px;
-}
-
-.moveToggle {
-  height: 500px;
-  width: 100%;
-  background: blue;
-  display: none;
-}
-
-.active {
-  display: block;
 }
 
 /***** MEDIA QUERIES *****/
@@ -227,22 +185,68 @@ header .subtext {
     .navbar {
         background: rgba(0, 0, 0, 0.4);
     }
-    .navbar-nav {
-      text-align: left;
-      margin-right: 75%;
-    }
-    .navbar-toggle {
-      margin-right: 90%;
-    }
-
     header .title {
-      font-size: 100px;
+        font-size: 100px;
     }
     header .subtext {
-      font-size: 40px;
+        font-size: 40px;
     }
+}
 
+/***** iPhone 2G-4s Portrait *****/
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+    .jumbotron h1 {
+        font-size: 50px;
+    }
+    .jumbotron .subtext {
+        font-size: 20px;
+    }
+    .jumbotron .header-btn {
+        padding: 20px 40px;
+        font-size: 20px;
+        background: none;
+    }
+    .jumbotron img {
+        width: 25px;
+        height: 25px;
+    }
+    .about {
+        height: 600px;
+    }
     .about p {
-      font-size: 20px;
+        font-size: 13px;
+        margin: 20px 0;
+    }
+    .about .social {
+        width: 20px;
+        height: 20px;
+    }
+    .about .me {
+        width: 120px;
+        height: 120px;
+    }
+    .contact h1 {
+        font-size: 40px;
+    }
+    .contact p {
+        font-size: 20px;
+        letter-spacing: normal;
+    }
+}
+
+/***** iPhone 5-5s Portraint *****/
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) {
+    .about .me {
+        width: 150px;
+        height: 150px;
+    }
+    .about p {
+        font-size: 15px;
+    }
+    .about .social {
+        width: 25px;
+        height: 25px;
     }
 }
