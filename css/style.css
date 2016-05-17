@@ -57,6 +57,7 @@ header .subtext {
     border: 3px solid white;
     border-radius: 5px;
     font-size: 25px;
+    text-decoration: none;
 }
 .header-btn:hover {
     transition: all .35s ease;
@@ -64,7 +65,10 @@ header .subtext {
     color: #3498db;
     background-color: white;
 }
-
+.header-btn:focus {
+  text-decoration: none;
+  color: white;
+}
 
 /***** MAIN *****/
 
@@ -92,13 +96,35 @@ header .subtext {
 .about p {
     text-align: center;
     color: white;
-    font-size: 30px;
+    font-size: 25px;
     margin-top: 40px;
     margin-bottom: 40px;
 }
 
 .about .social {
   margin: 0 20px;
+  transition: all .5s ease;
+}
+
+.about img path {
+  stroke: red;
+  stroke-width: .5;
+}
+
+.about img:hover {
+  transition: all .35s ease;
+}
+
+/***** MUSIC *****/
+.music {
+  background: #2980b9;
+  height: 100%;
+  padding-top: 70px;
+  padding-bottom: 50px;
+}
+
+.music img {
+  margin-bottom: 20px;
 }
 
 /***** CONTACT *****/
@@ -106,6 +132,17 @@ header .subtext {
 .contact {
     height: 100vh;
     background-color: #34495e;
+}
+
+.contact h1 {
+  color: #233240;
+  font-size: 75px;
+}
+
+.contact p {
+  color: white;
+  letter-spacing: 2px;
+  font-size: 30px;
 }
 
 /***** HELPER *****/
@@ -138,8 +175,31 @@ header .subtext {
     -webkit-transform: scale(1.05);
     -moz-transform: scale(1.05);
     -ms-transform: scale(1.05);
-    transform: scale(1.03);
+    transform: scale(1.05);
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+}
+.social-grow {
+    -webkit-transition: all 200ms ease-in;
+    -moz-transition: all 200ms ease-in;
+    -ms-transition: all 200ms ease-in;
+    transition: all 200ms ease-in;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    border: 0;
+}
+.social-grow:hover {
+    z-index: 2;
+    cursor: pointer;
+    -webkit-transition: all 200ms ease-in;
+    -moz-transition: all 200ms ease-in;
+    -ms-transition: all 200ms ease-in;
+    transition: all 200ms ease-in;
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.4);
 }
 
 .boltToggle {
@@ -169,7 +229,7 @@ header .subtext {
     }
     .navbar-nav {
       text-align: left;
-      margin-right: 80%;
+      margin-right: 75%;
     }
     .navbar-toggle {
       margin-right: 90%;
@@ -180,5 +240,9 @@ header .subtext {
     }
     header .subtext {
       font-size: 40px;
+    }
+
+    .about p {
+      font-size: 20px;
     }
 }

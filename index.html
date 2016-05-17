@@ -10,7 +10,7 @@
   </head>
   <body>
 
-    <div class="jumbotron">
+    <div class="jumbotron" id="home">
       <nav class="navbar navbar-fixed-top" role="navigation">
           <div class="container">
               <div class="navbar-header">
@@ -22,12 +22,14 @@
               </div>
               <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                   <ul class="nav navbar-nav">
+                      <li class="visible-xs"><a href="#home">Home</a></li>
                       <li><a href="#portfolio">Portfolio</a></li>
                       <li><a href="#about">About</a></li>
                       <li><a href="#contact">Contact</a></li>
-                      <li class="visible-xs"><a href="#"><img src="img/Twitter.svg" alt="" height="35" width="35"/></a></li>
-                      <li class="visible-xs"><a href="#"><img src="img/Instagram.svg" alt="" height="35" width="35"/></a></li>
-                      <li class="visible-xs"><a href="#"><img src="img/YT.svg" alt="" height="35" width="35"/></a></li>
+                      <li><a href="#music">Music</a></li>
+                      <li class="visible-xs"><a href="http://www.twitter.com/hewbz"><img src="img/test.svg" alt="" height="35" width="35"/></a></li>
+                      <li class="visible-xs"><a href="http://www.instagram.com/wearesleepless"><img src="img/Instagram.svg" alt="" height="35" width="35"/></a></li>
+                      <li class="visible-xs"><a href="https://www.facebook.com/dylan.c.bailey"><img src="img/Facebook.svg" alt="" height="35" width="35"/></a></li>
                   </ul>
               </div>
           </div>
@@ -38,7 +40,7 @@
           <div class="col-md-12">
             <h1 class="title">Dylan Bailey</h1>
             <p class="subtext">Front End Web Developer and Musician</p>
-            <a class="header-btn" href="#">My Projects</a>
+            <a class="header-btn" href="#portfolio">My Projects</a>
           </div>
         </div>
       </header>
@@ -50,33 +52,24 @@
         <div class="row">
           <div class="col-md-4">
             <img src="img/bolt.jpg" class="img-responsive grow" alt="" />
-            <div class="boltToggle">
-              <h1 class="text-right">Bolt</h1>
-              <p class="text-right">HTML5, CSS3</p>
-            </div>
           </div>
           <div class="col-md-4">
             <img src="img/move.jpg" class="img-responsive grow" alt="" />
-            <div class="moveToggle"></div>
           </div>
           <div class="col-md-4">
             <img src="img/bass.jpg" class="img-responsive grow" alt="" />
-            <div class="bassToggle"></div>
           </div>
         </div>
 
         <div class="row">
           <div class="col-md-4">
             <img src="img/nana.jpg" class="img-responsive grow" alt="" />
-            <div class="nanaToggle"></div>
           </div>
           <div class="col-md-4">
             <img src="img/pocket.jpg" class="img-responsive grow" alt="" />
-            <div class="pocketToggle"></div>
           </div>
           <div class="col-md-4">
             <img src="img/task.jpg" class="img-responsive grow" alt="" />
-            <div class="taskToggle"></div>
           </div>
         </div>
 
@@ -89,24 +82,54 @@
       <div class="container vertical-align text-center">
         <div class="col-md-12">
           <img class="me center-block" src="img/me.jpg" alt="" />
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-          </p>
-          <img class="social" src="img/Twitter.svg" alt="" width="50" height="50"/>
-          <img class="social" src="img/YT.svg" alt="" width="50" height="50"/>
-          <img class="social" src="img/Instagram.svg" alt="" width="50" height="50"/>
-          <img class="social" src="img/Google.svg" alt="" width="50" height="50"/>
+          <p>Hi there! My name is Dylan Bailey and I am a Front End Web Developer. I love creating websites and trying to incorporate modern designs into them. I am fluent in HTML5, CSS3 and jQuery. I'm hoping to expand my knowledge of Front End by adding AngularJS to the mix. When I'm not working on websites, I am usually working on music for solo projects or for games. If you'd like to inquire about hiring me, please shoot me an email!</p>
+          <a href="http://www.twitter.com/hewbz"><img class="social social-grow" src="img/test.svg" alt=""/></a>
+          <a href="https://plus.google.com/u/0/102928242376862638127/posts"><img class="social social-grow" src="img/GooglePlus.svg" alt=""/></a>
+          <a href="http://www.instagram.com/wearesleepless"><img class="social social-grow" src="img/Instagram.svg" alt=""/><a/>
+          <a href="https://www.facebook.com/dylan.c.bailey"><img class="social social-grow" src="img/Facebook.svg" alt=""/></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="music" id="music">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <img src="img/iamsleepless-bang.jpg" class="img-responsive center-block grow" alt="" />
+          </div>
+          <div class="col-md-4">
+            <img src="img/iamsleepless-frozen.jpg" class="img-responsive center-block grow" alt="" />
+          </div>
+          <div class="col-md-4">
+            <img src="img/iamsleepless-bethany.jpg" class="img-responsive center-block grow" alt="" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <img src="img/iamsleepless-paper.jpg" class="img-responsive center-block grow" alt="" />
+          </div>
+          <div class="col-md-4">
+            <img src="img/iamsleepless-hollow.jpg" class="img-responsive center-block grow" alt="" />
+          </div>
+          <div class="col-md-4">
+            <img src="img/iamsleepless-holding.jpg" class="img-responsive center-block grow" alt="" />
+          </div>
         </div>
       </div>
     </div>
 
     <div class="contact" id="contact">
-      <div class="container ">
+      <div class="container text-center vertical-align">
+        <div class="col-md-12">
+          <h1>Available for hire!</h1>
+          <p>iamdylanbailey@gmail.com</p>
+        </div>
       </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="js/hamburgers.js"></script>
     <script>
 
     $(document).ready(function() {
@@ -120,19 +143,19 @@
       });
 
       $(function() {
-  $('a[href*="#"]:not([href="#"])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html, body').animate({
-          scrollTop: target.offset().top
-        }, 1000);
-        return false;
-      }
-    }
-  });
-});
+        $('a[href*="#"]:not([href="#"])').click(function() {
+          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+              $('html, body').animate({
+                scrollTop: target.offset().top
+              }, 1000);
+              return false;
+            }
+          }
+        });
+      });
 
     });
 
